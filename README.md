@@ -40,3 +40,10 @@ sudo mysql -e "SELECT \* FROM bet.bookmaker;"
 ```
 sudo mysql -e "SHOW VARIABLES LIKE 'gtid_mode';"
 ```
+### Дополнительно:  
+https://www.abhinavbit.com/2019/05/gtid-replication-skip-transaction-using.html  
+На случай ошибки вида:  
+```
+  Slave_IO_Running: Yes
+  Slave_SQL_Running: No
+```
