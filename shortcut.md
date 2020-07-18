@@ -25,10 +25,12 @@ echo "password=`grep -i root@localhost /var/log/mysqld.log |awk '{print $NF}'`" 
   ```USE productsdb;```  
   
 Создание таблицы(необходимо описание)  
-  ```CREATE TABLE Customers
-  (
-      Id INT,
-     Age INT,
-     FirstName VARCHAR(20),
-     LastName VARCHAR(20)
-  );```  
+ ```
+CREATE TABLE Customers
+(
+  Id INT,
+  Age INT,
+  FirstName VARCHAR(20),
+  LastName VARCHAR(20)
+);
+```  
