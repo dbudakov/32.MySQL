@@ -24,7 +24,7 @@ echo "password=`grep -i root@localhost /var/log/mysqld.log |awk '{print $NF}'`" 
 Переход в базу  
   ```USE productsdb;```  
   
-Создание таблицы(необходимо описание)  
+Создание таблицы(для таблицы требуется описание)
  ```
 CREATE TABLE Customers
 (
