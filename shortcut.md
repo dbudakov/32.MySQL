@@ -36,7 +36,7 @@ CREATE TABLE Customers
 ```  
 Вставка в таблицу  
 ```
-insert into table_name valued(id_number,'string_name');
+insert into table_name values(id_number,'string_name');
 ```
 Вывести описание таблицы
 ```
