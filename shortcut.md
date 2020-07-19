@@ -34,5 +34,16 @@ CREATE TABLE Customers
   LastName VARCHAR(20)
 );
 ```  
+Вывести описание таблицы
+```
+# https://tableplus.com/blog/2018/11/mysql-describe-explain-details-table-structure-query.html
+SHOW COLUMNS FROM table_name;
+DESCRIBE table_name;
+DESC table_name;
+EXPLAIN table_name;
+EXPLAIN SELECT * FROM table_name;
+```
 Сортировка вывода  
-  https://metanit.com/sql/mysql/4.3.php  
+```
+# https://metanit.com/sql/mysql/4.3.php  
+```
