@@ -34,6 +34,10 @@ CREATE TABLE Customers
   LastName VARCHAR(20)
 );
 ```  
+Вставка в таблицу  
+```
+insert into table_name valued(id_number,'string_name');
+```
 Вывести описание таблицы
 ```
 # https://tableplus.com/blog/2018/11/mysql-describe-explain-details-table-structure-query.html
