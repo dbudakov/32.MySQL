@@ -34,3 +34,5 @@ CREATE TABLE Customers
   LastName VARCHAR(20)
 );
 ```  
+Сортировка вывода  
+  https://metanit.com/sql/mysql/4.3.php  
