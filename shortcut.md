@@ -15,8 +15,29 @@ echo [client] > /root/.my.cnf
 echo "password=`grep -i root@localhost /var/log/mysqld.log |awk '{print $NF}'`" >> /root/.my.cnf
 ```
   
-посмотреть пользователей:  
-```  SELECT USER from mysql. user;```  
+посмотреть пользователей:    
+```  SELECT USER from mysql. user;``` 
+
+Создание пользователей  
+```
+# Add user mySQL
+# localhost - указывается в качестве хоста с которого разрешены подключения
+mysql -e "CREATE USER postfix@localhost IDENTIFIED BY 'P@ssw0rd';"
+mysql -e "CREATE DATABASE postfix;"
+mysql -e "GRANT ALL PRIVILEGES ON postfix.* TO postfix IDENTIFIED BY 'P@ssw0rd';"
+```
+
+Удаление пользователей  
+https://lyalyuev.info/2017/02/16/how-to-delete-user-from-mysql-mariadb/  
+```
+Посмотреть все привилегии пользователя
+  SHOW GRANTS FOR 'user_name'@'localhost'; 
+Отзыв всех разрешений для пользователя
+  REVOKE ALL PRIVILEGES, GRANT OPTION FROM 'user_name'@'localhost';
+Удаление пользователя
+  DROP USER 'user_name'@'localhost';
+
+```
     
 Создание базы  
   ```CREATE DATABASE productsdb;```    
